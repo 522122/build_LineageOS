@@ -8,7 +8,7 @@ MD5SUM=`awk '{print $1}' /home/paso/android/system/out/target/product/gemini/lin
 echo "{ 
 	id: null,
 	result: [{ 
-		incremental: 'INCREMENTAL', 
+		incremental: '$INCREMENTAL', 
 		api_level: '25', 
 		url: 'http://vpn.paskalev.sk/files/lineage-14.1-$TAR_DATE-UNOFFICIAL-gemini.zip',
 		timestamp: $TIMESTAMP, 
