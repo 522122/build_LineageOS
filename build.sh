@@ -2,6 +2,7 @@
 . /home/paso/.bashrc
 
 #define variables
+CUR_DIR="`pwd`"
 NEW_BUILD="/home/paso/android/system/out/target/product/gemini/lineage-14.1-`date +%Y%m%d`-UNOFFICIAL-gemini.zip"
 NEW_META="/home/paso/android/system/out/target/product/gemini/meta.txt"
 
@@ -18,7 +19,7 @@ repo sync -j8
 brunch gemini
 
 #create metadata for updater
-/home/paso/generatemeta.sh > /home/paso/android/system/out/target/product/gemini/meta.txt
+$CUR_DIR/generatemeta.sh > /home/paso/android/system/out/target/product/gemini/meta.txt
 
 #if main file was successfully created we can upload everything to server
 if [ -f $NEW_BUILD ];
