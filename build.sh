@@ -7,7 +7,7 @@ NEW_BUILD="/home/paso/android/system/out/target/product/gemini/lineage-14.1-`dat
 NEW_META="/home/paso/android/system/out/target/product/gemini/meta.txt"
 
 #cleanup
-rm $NEW_BUILD*
+#rm $NEW_BUILD*
 rm /home/paso/android/system/out/target/product/gemini/lineage-14.1-*-UNOFFICIAL-gemini.zip
 rm /home/paso/android/system/out/target/product/gemini/*ota*.zip
 
